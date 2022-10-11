@@ -8,6 +8,14 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script>
+
+        function Submit() {
+            var tel = document.getElementById('Number').value;
+            var mail = document.getElementById('Email').value;
+            alert("Contact Number : " + tel + "\nEmail: " + mail + " Was Submited");
+        }
+    </script>
 </head>
 <body>
     <section class="home-section" id="Home"></section>
@@ -112,26 +120,26 @@
             <form name="RegForm" method="post" id="userform" >
                 <tr>
                 <td><label for="Name">Name:</label></td>
-                <td><input id="Name" type="text" name="nam" value="Enter your name" maxlength="10" requested></td>
+                <td><input id="Name" type="text" name="nam" placeholder="Enter your name" maxlength="10" requested></td>
                 </tr>
         
                 <tr>
                 <td><label for="Email">Email:</label>
-                <td><input id="Email" type="email" name="em" value="Enter your email address" required></td>
+                <td><input id="Email" type="email" name="em" placeholder="Enter your email address" required></td>
                 </tr>
                 
                 <tr>
                 <td><label for="email">Phone Number:&nbsp;</label></td>
-                <td><input id="Number" type="tel" name="Tele" value="Enter your phone address" required></td>
+                <td><input id="Number" type="tel" name="Tele" placeholder="Enter your phone address" required></td>
                 </tr>
                 
                 <tr>
                 <td><label for="Details">Message:</label>
-                <td><textarea id="Para" name="det" value="Enter your message" cols="100" rows="50" style="height:100px; width:100px">Enter your message</textarea></td>
+                <td><textarea id="Para" name="det" placeholder="Enter your message" cols="100" rows="50" style="height:100px; width:164px"></textarea></td>
                 </tr>
 
                 <tr class="sub">
-                    <td><input type="submit" value="Submit"style="height:30px; width:80px"></td>
+                    <td><input type="submit" value="Submit"style="height:30px; width:80px" onclick= "Submit()"></td>
                     </tr>
                 </form>
             </table>
